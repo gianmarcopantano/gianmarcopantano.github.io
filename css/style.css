@@ -2,93 +2,23 @@
 body {
     background-image: url('/images/sfondo.webp'); /* Sostituisci con il nome del tuo file */
     background-size: cover;
-    background-position: center;
     background-attachment: fixed;
     margin: 0;
     height: 100vh; /* 100% dell'altezza della finestra */
-    display: flex; /* Utilizza Flexbox per il centramento */
-    justify-content: center; /* Centra orizzontalmente */
-    align-items: center; /* Centra verticalmente */
 }
 
 /* Centra il testo */
 .text-container {
+    align-items: center; /* Centra verticalmente */
+    display: flex; /* Utilizza Flexbox per il centramento */
+    background-position: center;
+    justify-content: center; /* Centra orizzontalmente */
+    height: 100%;
     text-align: center;
-    color: #6B8E23; /* Verde salvia */
-}
-
-/* Stile per i nomi */
-.name {
-    font-size: 3rem;
-    margin: 0;
-}
-
-/* Stile per la parola "e" */
-.and {
-    font-size: 2rem;
-    margin: 0;
+    color: #a0bb6a; /* Verde salvia */
 }
 
 /*----------------------------------------------------------------------------------------------------*/
 /*-----------------------------------------------sidebar----------------------------------------------*/
-.sidebar {
-    height: 100%; /* 100% Full-height */
-    width: 0; /* 0 width - change this with JavaScript */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Stay on top */
-    top: 0;
-    left: 0;
-    background-color: #6B8E23;
-    overflow-x: hidden; /* Disable horizontal scroll */
-    padding-top: 60px; /* Place content 60px from the top */
-    transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
-  }
-  
-  .sidebar a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #000000;
-    display: block;
-    transition: 0.3s;
-  }
-  
-  .sidebar a:hover {
-    color: #f1f1f1;
-  }
-  
-  .sidebar .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-  }
-  
-  .openbtn {
-    font-size: 20px;
-    cursor: pointer;
-    background-color: #6B8E23;
-    color: white;
-    padding: 10px 15px;
-    border: none;
-    position: fixed;
-    top: 0; /* Posiziona l'elemento in cima */
-    left: 0; /* Posiziona l'elemento a sinistra */
-    z-index: 1000; /* Assicurati che l'elemento sia visibile sopra gli altri */
-}
-  
-  .openbtn:hover {
-    background-color: #6B8E23;
-  }
-  
-  #main {
-    transition: margin-left .5s; /* If you want a transition effect */
-  }
-  
-  @media screen and (max-height: 450px) {
-    .sidebar {padding-top: 15px;}
-    .sidebar a {font-size: 18px;}
-  }
 
-  /*----------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------*/
