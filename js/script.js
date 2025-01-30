@@ -12,9 +12,7 @@ function closeNav() {
 /*----------------------------------------------------------------------------------------------------*/
 /*-------------------------------------------tasto copia----------------------------------------------*/
 // Funzione per copiare il valore del paragrafo negli appunti
-function copyToClipboard() {
-    var text = document.getElementById("iban-text").textContent; // Prendi il testo del paragrafo
-
+function copyToClipboard(text) {
     // Usa la Clipboard API moderna
     navigator.clipboard.writeText(text)
         .then(function () {
