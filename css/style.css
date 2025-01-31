@@ -9,7 +9,6 @@
     color: #a0bb6a; /* Verde salvia */
     font-size: 200%;
 }
-
 /*----------------------------------------------------------------------------------------------------*/
 /*-----------------------------------------------sidebar----------------------------------------------*/
 .sidebar {
@@ -25,9 +24,9 @@
 }
 
 .sidebar a {
-    padding: 2% 2% 2% 8%;
     text-decoration: none;
-    font-size: 2.5vw; /* Adatta la dimensione del testo */
+    font-size: clamp(16px, 4vw, 44px);
+    /* font-size: 4vw; */ /* Adatta la dimensione del testo */
     color: white;
     display: block;
     transition: 0.3s;
@@ -41,10 +40,9 @@
     position: absolute;
     top: 0;
     right: 5%;
-    font-size: 3vw; /* Adatta la dimensione del pulsante di chiusura */
+    font-size: 4vw; /* Adatta la dimensione del pulsante di chiusura */
     margin-left: 5%;
 }
-
 /*----------------------------------------------------------------------------------------------------*/
 /*---------------------------------------- Bottone sidebar ------------------------------------------*/
 .openbtn {
@@ -69,25 +67,4 @@
 .openbtn:hover {
     background-color: #9eb278;
 }
-
 /*----------------------------------------------------------------------------------------------------*/
-/*------------------------------------ Media query per schermi piccoli ------------------------------*/
-@media screen and (max-height: 450px) {
-    .sidebar {
-        padding-top: 2%;
-    }
-
-    .sidebar a {
-        font-size: 2vw; /* Adatta il testo per schermi bassi */
-    }
-}
-
-/*----------------------------------------------------------------------------------------------------*/
-/*-------------------------------------------immagini chiesa------------------------------------------*/
-.image-container {
-    display: flex;
-    justify-content: center; /* Centra orizzontalmente */
-    align-items: center; /* Centra verticalmente */
-    gap: 10%; /* Distanza tra le immagini */
-    margin-top: 3%; /* Spazio dall'alto */
-}
