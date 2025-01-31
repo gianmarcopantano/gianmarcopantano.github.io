@@ -1,44 +1,33 @@
 /* Centra il testo */
 .text-container {
-    align-items: center;
-    /* Centra verticalmente */
     display: flex;
-    /* Utilizza Flexbox per il centramento */
-    background-position: center;
-    justify-content: center;
-    /* Centra orizzontalmente */
-    height: 100%;
+    align-items: center; /* Centra verticalmente */
+    justify-content: center; /* Centra orizzontalmente */
+    height: 100vh; /* Occupa tutta l'altezza dello schermo */
+    width: 100%; /* Occupa tutta la larghezza disponibile */
     text-align: center;
-    color: #a0bb6a;
-    /* Verde salvia */
+    color: #a0bb6a; /* Verde salvia */
+    font-size: 200%;
 }
 
 /*----------------------------------------------------------------------------------------------------*/
 /*-----------------------------------------------sidebar----------------------------------------------*/
 .sidebar {
     height: 100%;
-    /* 100% Full-height */
-    width: 0;
-    /* 0 width - change this with JavaScript */
+    width: 0%; /* 0% - cambia con JavaScript per mostrare il menu */
     position: fixed;
-    /* Stay in place */
-    z-index: 1;
-    /* Stay on top */
     top: 0;
     left: 0;
     background-color: #b6c990;
-    overflow-x: hidden;
-    /* Disable horizontal scroll */
-    padding-top: 60px;
-    /* Place content 60px from the top */
+    overflow-x: hidden; /* Disabilita lo scroll orizzontale */
+    padding-top: 5%; /* 5% dall'alto */
     transition: 0.5s;
-    /* 0.5 second transition effect to slide in the sidebar */
 }
 
 .sidebar a {
-    padding: 8px 8px 8px 32px;
+    padding: 2% 2% 2% 8%;
     text-decoration: none;
-    font-size: 25px;
+    font-size: 2.5vw; /* Adatta la dimensione del testo */
     color: #000000;
     display: block;
     transition: 0.3s;
@@ -51,53 +40,53 @@
 .sidebar .closebtn {
     position: absolute;
     top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
+    right: 5%;
+    font-size: 3vw; /* Adatta la dimensione del pulsante di chiusura */
+    margin-left: 5%;
 }
 
+/*----------------------------------------------------------------------------------------------------*/
+/*---------------------------------------- Bottone sidebar ------------------------------------------*/
 .openbtn {
-    font-size: 20px;
+    font-size: 4vw; /* Dimensione dinamica dell'icona */
     cursor: pointer;
     background-color: #b6c990;
     color: white;
-    padding: 10px 15px;
     border: none;
     position: fixed;
-    top: 0;
-    /* Posiziona l'elemento in cima */
-    left: 0;
-    /* Posiziona l'elemento a sinistra */
-    z-index: 1000;
-    /* Assicurati che l'elemento sia visibile sopra gli altri */
+    top: 2%; /* Margine dall'alto */
+    left: 2%; /* Margine da sinistra */
+    z-index: 1000; /* Assicura visibilità sopra gli altri elementi */
+    padding-left: 1vw;
+    padding-right: 1vw;
+    width: auto; /* Lascia che la larghezza si adatti al padding */
+    height: auto; /* Lascia che l'altezza si adatti al padding */
+    display: flex;
+    justify-content: center; /* Centra l'icona orizzontalmente */
+    align-items: center; /* Centra l'icona verticalmente */
 }
 
 .openbtn:hover {
-    background-color: #b6c990;
+    background-color: #9eb278;
 }
 
-#main {
-    transition: margin-left .5s;
-    /* If you want a transition effect */
-}
-
+/*----------------------------------------------------------------------------------------------------*/
+/*------------------------------------ Media query per schermi piccoli ------------------------------*/
 @media screen and (max-height: 450px) {
     .sidebar {
-        padding-top: 15px;
+        padding-top: 2%;
     }
 
     .sidebar a {
-        font-size: 18px;
+        font-size: 2vw; /* Adatta il testo per schermi bassi */
     }
 }
-
 /*----------------------------------------------------------------------------------------------------*/
 /*-------------------------------------------immagini chiesa------------------------------------------*/
 .image-container {
     display: flex;
     justify-content: center; /* Centra orizzontalmente */
-    align-items: center; /* Centra verticalmente (opzionale) */
-    gap: 200px; /* Distanza tra le immagini */
-    margin-top: 30px; /* Spazio dall'alto */
+    align-items: center; /* Centra verticalmente */
+    gap: 10%; /* Distanza tra le immagini */
+    margin-top: 3%; /* Spazio dall'alto */
 }
-/*----------------------------------------------------------------------------------------------------*/
