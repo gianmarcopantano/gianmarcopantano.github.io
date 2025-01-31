@@ -46,7 +46,7 @@
 /*----------------------------------------------------------------------------------------------------*/
 /*---------------------------------------- Bottone sidebar ------------------------------------------*/
 .openbtn {
-    font-size: 4vw; /* Dimensione dinamica dell'icona */
+    font-size: clamp(16px, 10vw, 44px);; /* Dimensione dinamica dell'icona */
     cursor: pointer;
     background-color: #b6c990;
     color: white;
@@ -55,11 +55,13 @@
     top: 2%; /* Margine dall'alto */
     left: 2%; /* Margine da sinistra */
     z-index: 1000; /* Assicura visibilità sopra gli altri elementi */
-    padding-left: 1vw;
-    padding-right: 1vw;
+    padding-top: 0.5vw; /* Lascia che il padding si adatti automaticamente */
+    padding-bottom: 0.5vw; /* Lascia che il padding si adatti automaticamente */
+    padding-right: 2vw; /* Lascia che il padding si adatti automaticamente */
+    padding-left: 2vw; /* Lascia che il padding si adatti automaticamente */
     width: auto; /* Lascia che la larghezza si adatti al padding */
     height: auto; /* Lascia che l'altezza si adatti al padding */
-    display: flex;
+    display: inline-flex; /* Imposta il display su inline-flex per centrare l'icona */
     justify-content: center; /* Centra l'icona orizzontalmente */
     align-items: center; /* Centra l'icona verticalmente */
 }
