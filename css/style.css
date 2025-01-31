@@ -19,17 +19,17 @@
     left: 0;
     background-color: #b6c990;
     overflow-x: hidden; /* Disabilita lo scroll orizzontale */
-    padding-top: 10%;
-    transition: 0.5s;
+    padding-top: 5%;
+    transition: width 0.5s ease-in-out;
 }
 
 .sidebar a {
     text-decoration: none;
-    font-size: clamp(16px, 4vw, 44px);
+    font-size: clamp(16px, 6vw, 44px);
     /* font-size: 4vw; */ /* Adatta la dimensione del testo */
     color: white;
     display: block;
-    transition: 0.3s;
+    transition: width 0.3s ease-in-out;
 }
 
 .sidebar a:hover {
