@@ -19,7 +19,7 @@ function openNav() {
         });
 
         // 3. Assegna la larghezza massima alla sidebar con un po' di margine
-        sidebar.style.width = (maxWidth + 2) + "px"; // Aggiunge 2px di margine
+        sidebar.style.width = (maxWidth + 5) + "px"; // Aggiunge 2px di margine
         document.getElementById("main").style.display = "none";
     }, 50); // Aspetta un attimo per il rendering
 }

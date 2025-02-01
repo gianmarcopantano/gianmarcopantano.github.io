@@ -7,7 +7,8 @@
     width: 100%; /* Occupa tutta la larghezza disponibile */
     text-align: center;
     color: #a0bb6a; /* Verde salvia */
-    font-size: 200%;
+    font-size: 400%;
+    font-family: "Great Vibes", sans-serif;
 }
 /*----------------------------------------------------------------------------------------------------*/
 /*-----------------------------------------------sidebar----------------------------------------------*/
@@ -19,7 +20,7 @@
     left: 0;
     background-color: #b6c990;
     overflow-x: hidden; /* Disabilita lo scroll orizzontale */
-    padding-top: 5%;
+    padding-top: 10%;
     transition: width 0.5s ease-in-out;
 }
 
@@ -40,7 +41,7 @@
     position: absolute;
     top: 0;
     right: 5%;
-    font-size: 4vw; /* Adatta la dimensione del pulsante di chiusura */
+    font-size: 6vw; /* Adatta la dimensione del pulsante di chiusura */
     margin-left: 5%;
 }
 /*----------------------------------------------------------------------------------------------------*/
