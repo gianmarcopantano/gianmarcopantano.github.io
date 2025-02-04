@@ -11,7 +11,16 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Great Vibes">
 </head>
 
-<body style="height: 100%; width: 100%;">
+<body>
+    <img src="/images/sfondoresized.jpg" alt=""
+    style="
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    z-index: -100;">
+
     <div id="mySidebar" class="sidebar">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <a href="index.html">Home</a>
@@ -27,7 +36,8 @@
     </div>
 
     <div style="display: flex; justify-content: center; align-items: center; margin-top: 15vh;">
-        <p style="font-size: clamp(16px, 9vw, 100px); color: #7e915a; font-family: 'Great Vibes', sans-serif;">
+        <p style="text-shadow: 2px 0 #fff, -2px 0 #fff, 0 2px #fff, 0 -2px #fff,
+             1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -1px 1px #fff; font-size: clamp(16px, 9vw, 100px); color: #7e915a; font-family: 'Great Vibes', sans-serif;">
             Chiesa Redemptoris Mater</p>
     </div>
 
@@ -38,11 +48,14 @@
             <img src="/images/churchMap.jpg" alt="Mappa" width="65%">
         </a>
         <br>
-        <p style="font-size: 2vw;">Clicca per aprire!</p>
+        <p style="text-shadow: 2px 0 #fff, -2px 0 #fff, 0 2px #fff, 0 -2px #fff,
+             1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -1px 1px #fff; font-size: 2vw;">Clicca per aprire!</p>
     </div>
 
     <button type="button"
     style="color: #7e915a; border: none; background: transparent;
+    text-shadow: 2px 0 #fff, -2px 0 #fff, 0 2px #fff, 0 -2px #fff,
+             1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -1px 1px #fff; 
     font-size: clamp(10px, 3vw, 100px); /* Stessa grandezza dell'IBAN */
     display: flex; align-items: center; justify-content: center;
     cursor: pointer;
